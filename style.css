@@ -1,0 +1,386 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+:root {
+    --sand-light: #f4e1b6;
+    --sand-medium: #e6c88b;
+    --sand-dark: #d4a65a;
+    --text-dark: #5a4633;
+    --nav-dark: #3b2f1e;
+    --panel-dark: #5a4633;
+}
+
+/* Navigation Bar */
+.navbar {
+    height: 60px;
+    background-color: var(--nav-dark);
+    color: var(--sand-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Box1 (Nile Logo) */
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo{
+    
+    background-image: url(Nile\ logo\ 2.png);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid var(--sand-dark);
+}
+
+/* Box2 (Deliver to India) */
+.nav-address {
+    padding: 7px;
+}
+
+.nav-address a {
+    color: var(--sand-light);
+    text-decoration: none;
+}
+
+.add-first {
+    color: #e0cfa6;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.add-sec {
+    margin: 3px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+/* Box3 (Search Bar) */
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-select {
+    background-color: var(--sand-medium);
+    width: 50px;
+    text-align: left;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    padding: 10px;
+}
+
+.search-icon {
+    width: 45px;
+    height: 40px;
+    border: none;
+    background-color: var(--sand-dark);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 1.2rem;
+}
+
+.nav-search:hover {
+    border: solid 3px var(--sand-dark);
+}
+
+/* Box4 */
+.nav-signin,
+.nav-return {
+    padding: 9px;
+}
+
+.nav-signin a,
+.nav-return a {
+    color: var(--sand-light);
+    text-decoration: none;
+}
+
+span {
+    font-size: 0.7rem;
+}
+
+.nav-sec {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Box5 (Cart) */
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 9px;
+}
+
+.nav-cart a {
+    color: var(--sand-light);
+    text-decoration: none;
+}
+
+.nav-cart i {
+    font-size: 30px;
+}
+
+/* Panel Bar */
+.panel {
+    height: 40px;
+    background-color: var(--panel-dark);
+    color: var(--sand-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-all,
+.panel-deals {
+    padding: 9px;
+}
+
+.panel-all a,
+.panel-deals a {
+    color: var(--sand-light);
+    text-decoration: none;
+}
+
+.panel-ops {
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-ops p {
+    display: inline;
+    margin-left: 15px;
+    padding: 9px;
+}
+
+.panel-ops a {
+    color: var(--sand-light);
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url(hero_image.jpg);
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-section a {
+    text-decoration: none;
+}
+
+.hero-section a:hover {
+    text-decoration: underline;
+}
+
+.hero-msg {
+    background-color: var(--sand-light);
+    color: var(--text-dark);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 98%;
+    margin-bottom: 25px;
+}
+
+.hero-msg a {
+    color: var(--nav-dark);
+}
+
+/* Shop Section */
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--sand-light);
+}
+
+.shop-section a {
+    text-decoration: none;
+    color: var(--nav-dark);
+}
+
+.box {
+    height: 400px;
+    width: 23.6%;
+    background-color: var(--sand-medium);
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.box-img {
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box p {
+    display: inline;
+}
+
+.box p:hover {
+    font-weight: 700;
+}
+
+/* Recommendation Section */
+.recommendation {
+    height: 150px;
+    text-align: center;
+    background-color: var(--sand-light);
+    color: var(--text-dark);
+}
+
+.recommendation h2 {
+    padding-top: 50px;
+}
+
+.recommendation p {
+    font-size: 0.7rem;
+    margin-top: 7px;
+}
+
+.recommendation a {
+    color: var(--nav-dark);
+}
+
+.recommendation a:hover {
+    color: var(--text-dark);
+}
+
+.sign {
+    width: 250px;
+    height: 30px;
+    background-color: var(--sand-dark);
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+}
+
+.sign:hover {
+    background-color: #c08d45;
+}
+
+/* Footer */
+footer {
+    margin-top: 15px;
+}
+
+.foot-panel1 {
+    background-color: var(--panel-dark);
+    color: var(--sand-light);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel1:hover {
+    background-color: #6b523f;
+}
+
+.foot-panel2 {
+    background-color: var(--nav-dark);
+    color: var(--sand-light);
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #f3e7cf;
+}
+
+ul p {
+    font-weight: 700;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+.foot-panel3 {
+    background-color: var(--nav-dark);
+    color: var(--sand-light);
+    border-top: 0.1px solid #a89576;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-logo {
+    background-image: url(Nile\ logo\ 2.png);
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.foot-panel4 {
+    background-color: var(--nav-dark);
+    color: var(--sand-light);
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.pages {
+    padding-top: 20px;
+}
+
+.pages a {
+    padding-right: 15px;
+    color: var(--sand-light);
+}
+
+.pages a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    padding-top: 5px;
+}
